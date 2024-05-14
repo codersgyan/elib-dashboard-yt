@@ -39,6 +39,8 @@ import { Link } from 'react-router-dom';
 
 const BooksPage = () => {
     // todo: add loading spinner, and error message
+    // @ts-ignore
+
     const { data, isLoading, isError } = useQuery({
         queryKey: ['books'],
         queryFn: getBooks,
